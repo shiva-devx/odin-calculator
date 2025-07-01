@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 12px;
+
+}
+
+.container-calculator {
+    border: 1px solid black;
+    border-radius: 1.2rem;
+    padding: 32px 16px;
+    max-width: 312px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgb(34, 34, 46);
+}
+
+.display {
+    border: 1px solid black;
+    height: 64px;
+    padding: 14px;
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(118, 130, 110, 0.891);
+    border-radius: 1.2rem;
+}
+
+.username{
+    align-self: center;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Limelight', Impact, sans-serif;
+}
+.firstrow {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+
+.otherrows {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    width: 64px;
+    height: 64px;
+    color: white;
+    background-color: darkslategray;
+    font-weight: bolder;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+
+#clearKey {
+    background-color: tomato;
+}
+
+.numericKey, #pointKey {
+    background-color: lightslategray;
+}
+
+
